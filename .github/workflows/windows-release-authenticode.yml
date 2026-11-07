@@ -1,0 +1,46 @@
+name: Windows release Authenticode audit
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing GitHub Release tag to verify
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  windows-signature-audit:
+    name: Verify published Windows binaries
+    runs-on: windows-latest
+    steps:
+      - name: Checkout verification policy
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Download GitHub Release assets
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.release.tag_name || inputs.tag }}
+        run: |
+          if (-not $env:RELEASE_TAG) { throw "No release tag was supplied." }
+          New-Item -ItemType Directory -Force -Path release | Out-Null
+          gh release download $env:RELEASE_TAG --repo $env:GITHUB_REPOSITORY --dir release
+          if ($LASTEXITCODE -ne 0) { throw "Release download failed." }
+      - name: Enforce trusted Authenticode signatures
+        shell: pwsh
+        run: |
+          $items = @(Get-ChildItem -LiteralPath release -File |
+            Where-Object { $_.Extension.ToLowerInvariant() -in @('.exe', '.msi', '.dll', '.zip') } |
+            Select-Object -ExpandProperty FullName)
+          if ($items.Count -eq 0) { throw "No Windows release executables to verify." }
+          & ./tools/Test-WindowsReleaseSignature.ps1 -Path $items
+          if ($LASTEXITCODE -ne 0) {
+            throw "Unsigned or untrusted release assets. CI does not approve this release."
+          }
