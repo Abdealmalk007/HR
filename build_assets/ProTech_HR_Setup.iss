@@ -42,6 +42,10 @@ WizardStyle=modern
 SetupIconFile=..\assets\protech_hr.ico
 UninstallDisplayIcon={app}\{#AppExeName}
 LicenseFile=..\LICENSE
+#ifdef PROTECH_SIGNED_BUILD
+SignTool=ProTechSigner
+SignedUninstaller=yes
+#endif
 ; بدون شهادة توقيع تجارية — ستظهر رسالة SmartScreen عند أول تشغيل، هذا متوقع.
 
 [Languages]
