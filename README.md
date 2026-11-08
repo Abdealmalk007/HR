@@ -26,3 +26,9 @@ Do not treat successful compilation as full acceptance.
 
 Never upload actual employee details, payroll records, bank information,
 personal files, databases, credentials or production backup archives.
+
+## Official Project Website / Ø§Ù„Ù…ÙˆÙ‚Ø¹ Ø§Ù„Ø±Ø³Ù…ÙŠ
+
+For features, product status and official download information, see [the Alghad Digital product page](https://alghad.digital/programs/hr/).
+
+Ø§Ù„ØªÙØ§ØµÙŠÙ„ ÙˆØ±ÙˆØ§Ø¨Ø· Ø§Ù„ØªÙ†Ø²ÙŠÙ„ Ø§Ù„Ø±Ø³Ù…ÙŠØ© Ù…ØªØ§Ø­Ø© Ø¹Ø¨Ø± [ØµÙØ­Ø© Ø§Ù„Ø¨Ø±Ù†Ø§Ù…Ø¬ ÙÙŠ Ø§Ù„ØºØ¯ Ø¯ÙŠØ¬ØªØ§Ù„](https://alghad.digital/programs/hr/).
