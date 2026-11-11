@@ -1,21 +1,33 @@
-MIT License
+ProTech Proprietary License — All Rights Reserved
 
-Copyright (c) 2026 Abu Omar / ProTech
+Copyright (c) 2026 Abu Omar / ProTech. All Rights Reserved.
+Effective for distributions carrying this notice from 2026-11-11.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This software and its original documentation, designs and assets are proprietary.
+No permission is granted to use, copy, modify, merge, publish, distribute,
+sublicense or sell the software, in whole or in part, without prior written
+permission from the copyright holder, except as required by applicable law or
+expressly permitted by a separate written agreement.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Public availability of a repository is not a grant of a software license.
+Rights necessarily granted under the hosting platform's terms remain unaffected.
+
+Third-party components, dependencies, fonts and bundled tools remain governed by
+their respective licenses. This notice applies only to material owned by ProTech
+and does not replace third-party notices or permissions.
+
+Copies previously distributed under MIT or another license retain the terms
+under which they were received. This notice does not revoke previously granted
+permissions. Existing binaries and release archives must be evaluated according
+to their included license, not the current repository header.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+
+Permission and commercial licensing: protech.2025.2026@gmail.com
+
+جميع الحقوق محفوظة © 2026 Abu Omar / ProTech.
+البرنامج والمحتوى الأصلي ملكية خاصة. يلزم إذن كتابي مسبق للاستخدام أو النسخ
+أو التعديل أو النشر أو التوزيع أو البيع، ما لم يسمح القانون أو اتفاق مكتوب بذلك.
+لا يشمل هذا النص ملكية المكونات الخارجية، ولا يلغي حقوقًا مُنحت في نسخ سابقة.
